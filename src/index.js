@@ -6,7 +6,7 @@ var path = require("path");
 // Data is stored in the file `database.json` in the folder `db`.
 // Note that if you leave your app public, this database file will be copied if
 // someone forks your app. So don't use it to store sensitive information.
-var adapter = new FileSync("/sandbox/db/database.json");
+var adapter = new FileSync("../db/database.json");
 var db = low(adapter);
 var app = express();
 var bodyParser = require("body-parser");
